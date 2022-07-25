@@ -18,18 +18,25 @@ main {
   background-color: #e31e24;
   grid-row: 2 / 4;
   grid-column: 2 / 7;
+  -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
 }
 
 aside {
-  background-color: blue;
+  background-color: #685369;
   grid-column: 7 / 8;
   grid-row: 2/4;
+  -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
 }
 
 footer {
-  background-color: black;
+  background-color: #fcc8b2;
+
   grid-row: 4 /5;
   grid-column: 2/8;
+  -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
 }
 .navbar {
   background-color: #e31e24;
@@ -42,7 +49,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  border: 3px #fcc8b2 solid;
+  border: 2px #fcc8b2 solid;
   -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
   box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.66);
 }
@@ -56,7 +63,7 @@ footer {
   width: 50%;
   display: flex;
   box-sizing: border-box;
-  justify-content: end;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -67,11 +74,16 @@ footer {
   height: 1em;
   text-decoration: none;
   margin: 10px 15px;
+  position: relative;
+  left: 30px;
+  letter-spacing: 0.7px;
+  font-size: large;
 }
 
 .nav__links a:hover {
-  color: #fcc8b2;
+  color: #c6d8af;
   transform: scale(1.1);
+  text-shadow: -1px 1px 11px #000000;
 
   border-radius: 13px;
 }
@@ -99,4 +111,8 @@ footer {
 
 .titulo h1 {
   margin: 0.2em 1em;
+}
+.titulo h1 a {
+  text-decoration: none;
+  color: #000000;
 }
